@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "com.loicmaria.webapp",
+      "type": "com.loicmaria.webapp.ApiProperties",
+      "sourceType": "com.loicmaria.webapp.ApiProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.loicmaria.webapp.api-url",
+      "type": "java.lang.String",
+      "sourceType": "com.loicmaria.webapp.ApiProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/general :: head"></div>
+
+    <title>Détails livre</title>
+</head>
+
+<body>
+<header>
+    <div th:replace="fragments/general :: nav"></div>
+</header>
+
+<div class="container">
+
+    <!-- Tableau des détails du livre-->
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card border-dark mb-3">
+                <div class="card-body">
+                    <h1 class="card-title" th:text="'Détails du livre : ' + ${book.title}"></h1>
+
+                    <table class="table table-dark table-responsive-md" th:object="${book}">
+                        <thead>
+                        <tr>
+                            <th th:hidden="*{id}"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Résumé</th>
+                            <td th:text="*{summary}"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Date de parution</th>
+                            <td th:text="*{#dates.format(publicationDate, 'MM yyyy')}"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Auteur</th>
+                            <td th:text="*{author.firstName + ' ' + author.lastName}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Afficher les exemplaires correspondant au livre-->
+    <div class="row justify-content-center item">
+        <div class="col-12">
+            <div class="card border-dark mb-3">
+                <div class="card-body">
+                    <h1 class="card-title">Liste des exemplaires</h1>
+                    <p class="card-text">
+
+                    <table class="table table-dark table-responsive-md">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Éditeur</th>
+                            <th scope="col">Langue</th>
+                            <th scope="col">Collection</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Date de publication</th>
+                            <th scope="col">Exemplaires disponibles</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="copy, iter : ${copiesList}">
+                            <th th:text="${iter.count}"></th>
+                            <td th:text="${copy.publisherName}"></td>
+                            <td th:text="${copy.language}"></td>
+                            <td th:text="${copy.collection}"></td>
+                            <td th:text="${copy.type.name}"></td>
+                            <td th:text="${#dates.format(copy.publicationDate, 'MM yyyy')}"></td>
+                            <td th:text="${copy.copies}"></td>
+                            <td class="justify-content-center">
+                                <form th:action="@{/bookings/create}" method="post">
+                                    <input type="hidden" name="copyId" th:value="${copy.id}">
+                                    <button type="submit" class="btn btn-primary">Réserver</button>
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div th:if="${copiesList.isEmpty()}" th:text="'Aucun exemplaire'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/general :: footer"></div>
+</body>
+</html>

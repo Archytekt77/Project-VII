@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="384daa94-a19c-4df8-a4cb-354f174aa9d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/DTO/BookingDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/DTO/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/model/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/DTO/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/model/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/controller/BookingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/repository/BookingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/service/BookingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/service/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/loicmaria/api/service/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/loicmaria/webapp/model/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/java/com/loicmaria/webapp/web/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/loicmaria/webapp/web/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/resources/templates/crud/getSomething.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/resources/templates/crud/getSomething.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/main/resources/templates/fragments/model/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/main/resources/templates/fragments/model/book.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1p2bdCi3Sc5Gzahe6bs3OqvRkeL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="webapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.loicmaria.webapp.WebappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="384daa94-a19c-4df8-a4cb-354f174aa9d3" name="Default Changelist" comment="" />
+      <created>1614384218206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614384218206</updated>
+      <workItem from="1614384219419" duration="216000" />
+      <workItem from="1625481587373" duration="506000" />
+      <workItem from="1625482111653" duration="21000" />
+      <workItem from="1626083518384" duration="68000" />
+      <workItem from="1677245084974" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
